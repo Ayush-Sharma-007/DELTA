@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <!-- Forms are used to collect data from the user -->
+    <form action="/action">
+      <div>
+        <label for="username"> Username </label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          name="username"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          name="password"
+        />
+      </div>
+      <div>
+        <button type="submit">submit</button>
+      </div>
+    </form>
+    <hr />
+    <!-- connecting your webpage with another website -->
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" placeholder="search in youtube" />
+      <button>submit</button>
+    </form>
+    <hr />
+    <!-- checkboxes in html forms -->
+    <form action="/action">
+      <div>
+        <input type="checkbox" name="age" id="age" />
+        <label for="age">I am 18+</label>
+      </div>
+      <br />
+      <input type="radio" name="fruit" id="apple">
+      <label for="apple">apple</label>
+      <input type="radio" name="fruit" id="mango">
+      <label for="mango">mango</label>
+      <input type="radio" name="fruit" id="banana">
+      <label for="banana">banana</label>
+    </form>
+  </body>
+</html>
+
+<!-- 1. Action attribute defines what action needs to be performed when a form is submitted or where the form data should be sent. It generally redirects to a javascript file.
+
+2. Input element is used to create multiple form controls. There are multiple type of inputs that can be created using the type attribute.
+
+3. Label element represents a caption for an item in a user interface. for attribute of label element and id attribute of input element should have same value to connect with each other.
+
+4. Name attribute - Name of the form control. Submitted with the form as part of a name/value pair.
+
+5. Checked attribute is used with checkboxes to set them checked by-default.
+-->
