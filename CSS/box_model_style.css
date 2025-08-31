@@ -1,0 +1,22 @@
+div {
+    height: 200px;
+    width: 500px;
+    background-color: aquamarine;
+    border: 5px solid black;
+    /* border-top: 5px solid yellow; */
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+button {
+    background-color: yellow;
+    border: 2px solid black;
+    width: 100px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/* To create a circle using div and border radius, the height and width of div should be same and border radius should be 50%*/
