@@ -1,0 +1,50 @@
+CSS : Cascading Style Sheets
+
+CASCADING
+
+What is Cascading in CSS?
+The CSS Cascade algorithm's job is to select CSS declarations in order to determine the correct values for CSS properties.
+
+Eg: 
+h2{
+    background-color: yellow;
+}
+
+h2{
+    background-color: blue;
+}
+
+Here the final color will be blue due to cascading.
+
+This is applicable even if there are multiple stylesheets. It would apply the properties of the stylesheet linked last.
+
+
+SELECTOR SPECIFICITY
+
+What is specificity?
+Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+
+It gives a three digit number which show the impact of a CSS Delcaration.
+
+Id selector > class selector, attribute selector and pseudo classes > element selector and pseudo elements
+
+Examples : 
+1. h2 {
+    background-color: yellow;
+}
+
+Here we only have an element selector so its specificity will be 001.
+
+2. .myclass:hover{
+    color: blue;
+}
+
+Here we have a class selector and a pseudo-class so its specificity will be 020.
+
+This shows that the CSS declaration in the second example will be 20 times more impactful than the CSS declaration in  first example.
+
+IMPORTANT : 1. USING MORE SELECTORS IS BETTER THAN USING LESS SELECTORS.
+2. IF TWO CSS DECLARATIONS HAVE THE SAME SPECIFICITY THEN WE CHECK THE CASCADING OF THE DECLARATIONS.
+3. INLINE STYLING HAS THE HIGHEST PRIORITY AMONG ALL.
+4. IF ANY CSS DECLARATION HAS !Important WRITTEN THEN ITS PRIORITY BECOMES MORE THAN EVEN THE INLINE STYLING AND IT BECOMES IMMUTABLE.
+5. INPUT BOXES AND BUTTONS BY DEFAULT DO NOT INHERIT ANY PROPERTY FROM THEIR PARENT ELEMENTS. 
