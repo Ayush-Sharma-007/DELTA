@@ -21,16 +21,18 @@ body {
 
 .main-content {
     background-color: #121212;
-    flex: 1;
+    /* flex is shorthand property that decides how much the items will grow or shrink to accomodate the space inside the flex container */
+    flex: 1;        /* flex: 1 automatically divides the available space equally among all the items in the flex container*/
     border-radius: 1rem;
     overflow: auto;
 }
 
 .music-player {
     background-color: black;
+    /* the position and bottom property is used to fix the music player container to the bottom such that it never leaves the screen */
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%;  /* to make it take up the whole screen width*/
     height: 72px;
 }
 
@@ -50,7 +52,8 @@ a {
 }
 
 .nav-option {
-    line-height: 2.5rem;
+    /* line-height is used to set the distance between the lines of text */
+    line-height: 2.5rem;     
     opacity: 0.7;
     padding: 0.5rem 0.75rem;
 }
@@ -130,7 +133,7 @@ a {
 }
 
 .sticky-nav {
-    position: sticky;
+    position: sticky;     /* such that the nav bar keep its position even on scrooling and stays on screen*/
     top: 0;
     background-color: #121212;
     display: flex;
